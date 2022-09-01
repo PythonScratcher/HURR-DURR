@@ -20,7 +20,7 @@ namespace HURRDURR
         private void webBrowser2_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             webBrowser1.ScriptErrorsSuppressed = true;
-            var t = Task.Delay(1000);
+            var t = Task.Delay(1);
             t.Wait();
             var form1 = new Form1();
             form1.Show();

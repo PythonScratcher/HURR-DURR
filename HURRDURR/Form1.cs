@@ -14,14 +14,13 @@ namespace HURRDURR
     {
         public Form1()
         {
+
+            var form2 = new Form2();
+            form2.Show();
+
             InitializeComponent();
         }
 
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-            webBrowser1.ScriptErrorsSuppressed = true;
-            var form2 = new Form2();
-            form2.Show();
-        }
+
     }
 }
